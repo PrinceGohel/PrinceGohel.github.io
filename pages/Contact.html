@@ -1,47 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PrinceWeb | Contact Me</title>
-  <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-  <nav>
-    <div class="logo">Prince Gohel | Portfolio</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <ul id="nav-links">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrinceWeb | Contact Me</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      .contact-section {
+        /* background: #1a141e; */
+        color: #fff;
+        padding: 3rem 1rem;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .contact-section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #e6b8c7;
+        text-shadow: 0 0 3px #b985a7;
+      }
+
+      .contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        background: rgba(255, 255, 255, 0.04);
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(233, 182, 203, 0.15);
+        backdrop-filter: blur(10px);
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        background: #2b1f2d;
+        border: 1px solid #e6b8c7;
+        color: #fff;
+        padding: 0.75rem;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+      }
+
+      .contact-form input::placeholder,
+      .contact-form textarea::placeholder {
+        color: #cba8b6;
+      }
+
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        border-color: #f3cce0;
+        box-shadow: 0 0 8px #f3cce0;
+      }
+
+      .contact-form button {
+        background: #d889b8;
+        color: #1a141e;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .contact-form button:hover {
+        background: #f3cce0;
+      }
+      .social-links {
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1.8rem;
+      }
+
+      .social-links a {
+        background-color: #2b1f2d;
+        border: 2px solid #e6b8c7;
+        color: #e6b8c7;
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: transform 0.3s ease, background 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .social-links a:hover {
+        background-color: #f3cce0;
+        color: #1a141e;
+        transform: scale(1.15);
+        box-shadow: 0 0 15px #f3cce0;
+      }
+
+      @media (max-width: 600px) {
+        .contact-form {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Prince Gohel | Portfolio</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="Projects.html">Projects</a></li>
         <li><a href="Contact.html">Contact Me</a></li>
       </ul>
-  </nav>
-  <main class="background" style="font-size: 18px;">
-    <section id="contact" style=" text-align: center;">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out via email or through my social media profiles ! </p>
-      <p style="margin-top: 2rem; margin-bottom: 2rem;">Let's connect!</p>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/prince__gohel/" target="_blank" class="social-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
-        </a>
-        <a href="https://x.com/Prince_gohel_" target="_blank" class="social-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="X.com" />
-        </a>
-        <a href="https://github.com/princex1" target="_blank" class="social-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
-        </a>
-      </div>
-      <div style="color: white; padding: 1.5rem 1rem;">
-        <P><B>email id         : </B>Princewebinfo@gmail.com</P>
-        <P style="margin-top: 25px;"><b>Phone Number : </b>+91 7043122104</P>
-      </div>
-    </section>
-  </main>
-  <footer> © 2025 YourName. All rights reserved.</footer>
-  <!-- Scroll to top button -->
-  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+    </nav>
+    <main class="background" style="font-size: 18px">
+      <section class="contact-section">
+        <h2>Contact Me</h2>
+        <p class="mb1">
+          Feel free to reach out via email or through my social media profiles !
+        </p>
+        <form
+          class="contact-form"
+          action="mailto:your.email@example.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message..."
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
 
-  <script src="../main.js"></script>
-</body>
+        <div class="social-links">
+          <a
+            href="https://instagram.com/your_username"
+            target="_blank"
+            title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://x.com/your_username"
+            target="_blank"
+            title="X (Twitter)"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a
+            href="https://github.com/your_username"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+
+        <!-- <div style="color: white; padding: 1.5rem 1rem"> -->
+        <p class="mt1"><b>Email : </b>Princewebinfo@gmail.com</p>
+        <p class="mt1"><b>Phone : </b> +91 7043122104</p>
+        <!-- </div> -->
+      </section>
+    </main>
+
+    <footer>© 2025 YourName. All rights reserved.</footer>
+
+    <!-- Scroll to top button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script src="../main.js"></script>
+  </body>
 </html>

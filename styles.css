@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
+}
 
-.background{
-  background: rgba(0,0,0,0.7) url(Img/7.jpg);
+.background {
+  background: rgba(0, 0, 0, 0.7) url(Img/7.jpg);
   background-size: cover;
   background-blend-mode: darken;
   padding: 10px;
@@ -17,7 +17,7 @@
   justify-content: center;
   gap: 20px;
 }
-  
+
 .social-link img {
   width: 50px;
   height: 50px;
@@ -55,8 +55,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .8rem 2rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  padding: 0.8rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 nav .logo {
@@ -116,7 +116,7 @@ footer {
   position: sticky;
   bottom: 0;
   width: 100%;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Scroll-to-Top Button */
@@ -132,10 +132,10 @@ footer {
   font-size: 18px;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   z-index: 999;
   transition: background-color 0.3s;
-  }
+}
 /* Home Section Styling */
 .home-section {
   /* height: 100vh; */
@@ -207,8 +207,8 @@ footer {
   nav .logo {
     font-size: 1rem;
   }
-  nav{
-    padding: .5rem 2rem;
+  nav {
+    padding: 0.5rem 2rem;
   }
   nav ul {
     position: fixed;
@@ -220,7 +220,7 @@ footer {
     height: auto;
     padding: 1rem;
     border-radius: 10px 0 0 10px;
-    box-shadow: -2px 0 10px rgba(0,0,0,0.4);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.4);
     transition: right 0.45s ease;
   }
   nav ul.show {
@@ -229,4 +229,11 @@ footer {
   .menu-toggle {
     display: block;
   }
+}
+.mb1{
+  margin-bottom: 1rem;
+}
+
+.mt1{
+  margin-top: 1rem;
 }
