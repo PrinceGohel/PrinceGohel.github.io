@@ -5,7 +5,7 @@
   }
 
 .background{
-  background: rgba(0,0,0,0.7) url(Img/7.jpg);
+  background: rgba(0,0,0,0.7) url(img/7.jpg);
   background-size: cover;
   background-blend-mode: darken;
   padding: 10px;
