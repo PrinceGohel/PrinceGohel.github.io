@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav>
-      <div class="logo">Prince Gohel | Portfolio</div>
+      <div class="logo">Prince Gohel | Menu - App</div>
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul id="nav-links">
         <li><a href="../index.html">Home</a></li>
@@ -19,24 +19,25 @@
 
     <main class="background" style="font-size: 18px">
 
-      <section style="text-align: center; padding: 1.5rem">
-        <h2>About The Projects</h2>
+      <section class="p-section">
+        <h2 class="c-s-h2">About The Projects</h2>
         <li>A Basic Menu Android Applications Made With Android Studio.</li>
       </section>
 
-      <section style="text-align: center; padding: 1.5rem">
-        <h2>Project github Link</h2>
-
+      <section class="p-section">
+        <h2 class="c-s-h2">Project github Link</h2>
         <div style="margin-top: 25px">
           <b>Github : </b><a class="btn" href="#">View Code</a><br>
         </div>
-
         <div style="margin-top: 45px">
-          <b>Apk : </b><a class="btn" href="../files/app-debug.apk" download="menu.apk"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 17.25 7.5 12M12 17.25v-10.5" /></svg> Download</a>
+          <b>Apk : </b>
+          <a class="btn" href="../files/app-debug.apk" download="menu.apk">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 17.25 7.5 12M12 17.25v-10.5" /></svg> Download</a>
         </div>
       </section>
 
-      <section style="text-align: center; padding: 1.5rem">
+      <!-- <section class="p-section">
         <h2>Photos</h2>
         <div>
             <div style="margin-bottom: 15px;">
@@ -54,13 +55,13 @@
             alt="APP homePage"
             style="height: 610px; width: 360px; border-radius: 15px;"/>
         </div>
-      </section>
+      </section> -->
       
     </main>
 
     <footer>© 2025 YourName. All rights reserved.</footer>
 
-    <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+    <button id="scrollTopBtn" onclick="scrollToTop()"> ↑ </button>
 
     <script src="../main.js"></script>
   </body>
