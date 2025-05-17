@@ -11,11 +11,11 @@
 
     <nav>
       <div class="logo">Prince Gohel | Contact Me</div>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
       <ul id="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="Projects.html">Projects</a></li>
-        <li><a href="Contact.html">Contact Me</a></li>
+        <li><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="Projects.html"><i class="fa-solid fa-file-lines"></i> Projects</a></li>
+      <li><a href="Contact.html"><i class="fa-solid fa-envelope"></i> Contact Me</a></li>
       </ul>
     </nav>
 
@@ -23,14 +23,14 @@
       <section class="contact-section">
         <h2>Contact Me</h2>
         <p class="mb1">
-          Feel free to reach out via email or through my social media profiles !
+          Feel Free To Reach Out Via Email or Through My Social Media Profiles !
         </p>
         <form
           class="contact-form"
-          action="mailto:your.email@example.com"
+          action="https://api.web3forms.com/submit"
           method="POST"
-          enctype="text/plain"
         >
+          <input type="hidden" name="access_key" value="da574561-ea9b-49cd-a178-7b07376a797f">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea
@@ -39,6 +39,7 @@
             placeholder="Your Message..."
             required
           ></textarea>
+          <input type="hidden" name="redirect" value="https://princegohel.github.io/pages/thank.html">
           <button type="submit">Send Message</button>
         </form>
 
@@ -62,15 +63,12 @@
             ><i class="fab fa-github"></i
           ></a>
         </div>
-        <p class="mt1"><b>Email : </b>Princewebinfo@gmail.com</p>
-        <p class="mt1"><b>Phone : </b> +91 7043122104</p>
+        <p class="mt1"><i class="fa-solid fa-envelope"></i><b> Email : </b>Princewebinfo@gmail.com</p>
+        <p class="mt1"><i class="fa-solid fa-phone"></i><b> Phone : </b> +91 7043122104</p>
       </section>
     </main>
 
-    <footer>© 2025 YourName. All rights reserved.</footer>
-
-    <!-- Scroll to top button -->
-    <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+    <footer>Copyright © 2025. All rights reserved.</footer>
 
     <script src="../main.js"></script>
   </body>

@@ -11,7 +11,7 @@ html {
 body {
   font-family: Arial, sans-serif;
   background-color: #1e1e2f;
-  color: white;
+  color: wheat;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -62,7 +62,7 @@ nav {
 }
 
 nav .logo {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -75,7 +75,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: wheat;
   font-size: 1rem;
   transition: color 0.3s;
 }
@@ -104,7 +104,7 @@ section.show {
 section h2 {
   margin-bottom: 1rem;
   font-size: 2rem;
-  border-bottom: 2px solid #00bcd4;
+  border-bottom: 1.8px solid #00bcd4;
   display: inline-block;
   padding-bottom: 0.5rem;
 }
@@ -119,24 +119,6 @@ footer {
   bottom: 0;
   width: 100%;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
-}
-
-/* Scroll-to-Top Button */
-#scrollTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #00bcd4;
-  color: #1e1e2f;
-  border: none;
-  padding: 10px 15px;
-  font-size: 18px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-  z-index: 999;
-  transition: background-color 0.3s;
 }
 
 /* Home Section Styling */
@@ -165,10 +147,9 @@ footer {
 
 .btn {
   border: 2px solid #ff6b6b;
-  background-color: transparent;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
+  color: wheat;
+  padding: 0.3rem .6rem;
+  border-radius: 1.2rem;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease, transform 0.3s ease;
@@ -186,31 +167,23 @@ footer {
   cursor: pointer;
 }
 
-#scrollTopBtn:hover {
-  background-color: #0097a7;
-}
-
 .contact-section {
-  color: #fff;
   padding: 3rem 1rem;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-section h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 2rem;
   color: #e6b8c7;
   text-shadow: 0 0 3px #b985a7;
 }
 
 .c-s-h2{
-  font-size: 2rem;
-  margin-bottom: 2rem;
   color: #e6b8c7;
   text-shadow: 0 0 3px #b985a7;
 }
-
 
 .contact-form {
   max-width: 500px;
@@ -299,6 +272,7 @@ footer {
 .icon {
   animation: spin 2s linear infinite;
 }
+
 /* Responsive */
 @media (max-width: 768px) {
   nav .logo {
@@ -329,13 +303,13 @@ footer {
   .contact-form {
     padding: 1.5rem;
   }
-  .btn {
-    padding: 0.4rem 0.75rem;
-  }
   .mt1-5{
     font-size: 15px;
   }
   section h2{
     font-size: 1.75rem;
+  }
+  .c-s-h2{
+    font-size: 1.5rem;
   }
 }
