@@ -12,3 +12,7 @@ function toggleMenu() {
         section.classList.add('show');
       }
     });
+
+function showMessage() {
+  alert("The Executable File Is Not Added Yet. It Will Be Available Soon.");
+}
