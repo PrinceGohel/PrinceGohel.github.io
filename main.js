@@ -1,30 +1,43 @@
-// Toggle mobile menu
+// Mobile nav toggle
 function toggleMenu() {
-  const navLinks = document.getElementById('nav-links');
-  navLinks.classList.toggle('show');
+  document.getElementById('nav-links').classList.toggle('show');
+}
+
+// Close menu on outside click
+document.addEventListener('click', function(e) {
+  const nav = document.getElementById('nav-links');
+  const toggle = document.querySelector('.menu-toggle');
+  if (nav && !nav.contains(e.target) && !toggle.contains(e.target)) {
+    nav.classList.remove('show');
   }
+});
 
-// Scroll to Top button
-const scrollBtn = document.getElementById("scrollTopBtn");
-
-window.onscroll = function() {
-// Show button after scrolling 300px
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    scrollBtn.style.display = "block";
+// Scroll-to-top button
+const scrollBtn = document.getElementById('scrollTopBtn');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 120) {
+    scrollBtn.style.display = 'block';
   } else {
-    scrollBtn.style.display = "none";
-    }
-// Animate sections on scroll
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        section.classList.add('show');
-      }
-    });
-  };
-  
-function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    scrollBtn.style.display = 'none';
   }
+  revealOnScroll();
+});
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Reveal on scroll
+function revealOnScroll() {
+  document.querySelectorAll('.reveal').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      el.classList.add('visible');
+    }
+  });
+}
+
+// Run on load too
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(revealOnScroll, 100);
+});

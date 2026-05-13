@@ -3,47 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PrinceWeb | Projects</title>
+  <title>Prince Gohel | Projects</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
   <nav>
-    <div class="logo">Prince Gohel | Portfolio</div>
+    <div class="logo">Prince Gohel</div>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <ul id="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="Projects.html">Projects</a></li>
-        <li><a href="Contact.html">Contact Me</a></li>
-      </ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
   </nav>
 
-  <main class="background" style="font-size: 18px;">
-    <section id="projects" style="text-align: center; padding: 1.5rem">
-      <h2>Projects</h2>
-      <p>Here are some of the projects I've worked on. More coming soon !</p>
-    </section>
-    <section style="padding: 2.5rem 1rem; text-align: center;">
-      <h2>Android Applications</h2>
-      <div><B>Menu App : </B><a href="../files/app-debug.apk" download="Menu.apk" style="color: white; font-size: 1rem;">Download App</a></div>
-      <div style="margin-top: 25px;"><B>Menu App : </B><a href="../files/app-debug.apk" download="Menu.apk" style="color: white; font-size: 1rem;">Download App</a></div>
-      <div style="margin-top: 25px;"><B>Menu App : </B><a href="../files/app-debug.apk" download="Menu.apk" style="color: white; font-size: 1rem;">Download App</a></div>
-    </section>
-    <section style="padding: 2.5rem 1rem; text-align: center;">
-      <h2>Unity Games</h2>
-      <div><B>Game : </B><a href="https://princex1.github.io/game2/" style="color: white; font-size: 1rem;">3d Game</a></div>
-    </section>
-    <section style="padding: 2.5rem 1rem; text-align: center;">
-      <h2>Websites</h2>
-      <div><B>Menu App : </B><a href="" style="color: white; font-size: 1rem;"></a></div>
-    </section>
+  <main>
+    <div class="section">
+      <div class="section-label reveal">My work</div>
+      <h1 class="section-title reveal">Projects</h1>
+      <p class="section-sub reveal">A collection of things I've built — apps, games, and web experiences.</p>
+
+      <!-- Android -->
+      <div class="section-label reveal" style="margin-bottom:1rem;">Android Applications</div>
+      <div class="projects-grid" style="margin-bottom:3.5rem;">
+        <div class="project-card reveal">
+          <div class="project-cat">Android · APK</div>
+          <h3>Menu App</h3>
+          <p>A digital menu application for browsing and exploring food options. Built for Android devices.</p>
+          <a href="../files/app-debug.apk" download="Menu.apk" class="project-link">
+            Download APK
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Unity Games -->
+      <div class="section-label reveal" style="margin-bottom:1rem;">Unity Games</div>
+      <div class="projects-grid" style="margin-bottom:3.5rem;">
+        <div class="project-card reveal">
+          <div class="project-cat">Unity · WebGL</div>
+          <h3>3D Game</h3>
+          <p>An interactive 3D browser game built with Unity and exported to WebGL. Playable directly in your browser.</p>
+          <a href="https://princex1.github.io/game2/" target="_blank" class="project-link">
+            Play Game
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Websites -->
+      <div class="section-label reveal" style="margin-bottom:1rem;">Websites</div>
+      <div class="projects-grid">
+        <div class="project-card reveal" style="border-style:dashed; opacity:0.6;">
+          <div class="project-cat">Web</div>
+          <h3>More coming soon</h3>
+          <p>New web projects are in the works. Check back soon!</p>
+        </div>
+      </div>
+    </div>
   </main>
-  
-  <footer>© 2025 YourName. All rights reserved.</footer>
 
+  <footer>© 2025 Prince Gohel · All rights reserved.</footer>
   <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
-  
   <script src="../main.js"></script>
-
 </body>
 </html>
