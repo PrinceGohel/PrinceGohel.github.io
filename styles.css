@@ -133,6 +133,7 @@ nav ul li a:hover::after { transform: scaleX(1); }
   content: ''; position: absolute; inset: 0;
   background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(110,231,247,0.06), transparent);
   opacity: 0; transition: opacity 0.35s;
+  pointer-events: none;
 }
 .project-card:hover { transform: translateY(-4px); box-shadow: var(--glow); border-color: rgba(110,231,247,0.3); }
 .project-card:hover::before { opacity: 1; }
