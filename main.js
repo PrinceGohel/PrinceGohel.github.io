@@ -281,7 +281,7 @@ const $$ = (s) => document.querySelectorAll(s);
 (function initCounters() {
   const stats = $$('.stat-num');
   if (!stats.length) return;
-  const targets = ['15','3','∞'];
+  const targets = ['10','2','∞'];
   const obs = new IntersectionObserver((entries) => {
     entries.forEach((entry, idx) => {
       if (!entry.isIntersecting) return;
